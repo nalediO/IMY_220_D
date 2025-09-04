@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/footer";
 import CreateProject from "../components/CreateProject";
 import "../css/ProjectsCPage.css";
-
+ 
 const ProjectsCPage = () => {
   const handleProjectCreate = (newProject) => {
     console.log("Project created:", newProject);

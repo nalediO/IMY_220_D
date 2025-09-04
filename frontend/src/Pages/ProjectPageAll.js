@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectList from "../components/ProjectList";
 import EditProject from "../components/EditProject";
+import Nav from "../components/Nav";
 import "../css/ProjectsPageAll.css"; 
 const ProjectsPageAll = ({ projectsData }) => {
   const [projects, setProjects] = useState(projectsData || []);
@@ -21,6 +22,7 @@ const ProjectsPageAll = ({ projectsData }) => {
 
   return (
     <div className="projects-page">
+      <Nav />
       <h1 className="projects-title">My Projects</h1>
 
       {editingProject ? (
